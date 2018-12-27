@@ -1,0 +1,21 @@
+Using Arithmatic opeartor:
+select last_name, salary, sarlary+300 from employees;
+
+Using Column Aliases:
+select last_name as name, commission_pct comm from employees;
+select last_name "Name", salary*12 "Annual Salary" from employees;
+
+Addition:
+select last_name, salary, salary+300 from employees;
+
+Aliesis:
+select last_name as name, commission_pct comm from employees;
+
+Use of Substitution names:
+select last_name "Name", salary*12 "Annual Salary" from employees;
+
+Cocatenation:
+select last_name || ' is a ' || job_id as "Employee Details" from employees;
+
+Concatenation with block quote:
+select department_name || q'[ Department's Manager Id: ]' || manager_id as "department and Manager " from departments;

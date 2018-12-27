@@ -1,0 +1,18 @@
+Use of where keyword:
+
+Selection:(SRK = selection returns single row)
+select employee_id, last_name, job_id, department_id from employees where department_id = 90;
+
+Selection of name:
+select employee_id, last_name, job_id, department_id from employees where last_name = 'King';
+
+Selection of date:
+select employee_id, last_name, job_id, department_id from employees where hire_date = '17-feb-1996';
+
+Projection:(pc = projection returns column)
+select last_name, salary from employees where salary<= 3000;
+
+Use of in operator:(memebership condition)
+select employee_id, manager_id, department_id from employees where last_name in('King','Khoo');
+
+
